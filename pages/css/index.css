@@ -1,0 +1,190 @@
+#main_menu {
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  background-color: #0d0106;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.33);
+  font-size: large;
+}
+
+#menu_content {
+  padding: .5%;
+  color: #fff;
+  display: flex;
+  user-select: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu_content ul {
+  list-style-type: none;
+  display: flex;
+}
+
+#menu_content ul li {
+  margin-left: 5px;
+}
+
+header {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url("https://source.unsplash.com/random/1920x1080/?space");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#title h1 {
+  font-size: 5rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#title h2 {
+  font-size: 2rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+#cources {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  gap: 10vh;
+}
+
+.cource {
+  width: 20vw;
+  height: 35vh;
+  background-color: #fff;
+  background-image: url("https://media.istockphoto.com/id/963424238/photo/brilliant-young-mathematician-approaches-big-blackboard-and-finishes-writing-sophisticated.jpg?s=612x612&w=0&k=20&c=rRTWmVhAdb6pmKiwGXzdmqVzpXSj0dy4KOiLnk7OaJk=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 3%;
+  box-shadow: 0px 0px 16px #000;
+  transition: 0.5s;
+  border-radius: 5%;
+}
+
+.cource:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 32px #000;
+}
+
+.cource p {
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 3%;
+  transition: 2s;
+}
+
+.price_link {
+  width: 100%;
+  height: 5vh;
+  font-size: 2em;
+  background-color: #ff331f;
+}
+
+#arrow_down {
+  width: 2em;
+  height: 2em;
+  background-color: #fbfbff;
+  animation: arrow_down_animation 2s ease-in-out infinite;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes arrow_down_animation {
+  0% {
+    top: 5%;
+  }
+
+  100% {
+    top: 15%;
+  }
+}
+
+#subscribe {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe input {
+  width: 40vw;
+  height: 6vh;
+  padding: 1%;
+  box-shadow: 0px 0px 5px 0px #000;
+  border: none;
+  border-radius: 10vh;
+}
+
+#subscribe div {
+  margin-left: 50%;
+}
+
+#advantages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3vw;
+}
+
+.advantage {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+  height: 40vh;
+  background: #fff;
+  color: #000;
+  font-size: large;
+  padding: 1%;
+  border: 3px ridge #000;
+  box-shadow: 0px 0px 15px 5px #0000006e;
+}
+
+.advantage span {font-size: 3em;}
+.advantage h3 {font-size: 1.5em;}
+.advantage p {font-size: 1em;}
+
+@media only screen and (max-width: 760px) {
+  
+  header {background-attachment: scroll; background-position: center;}
+  #menu_content {flex-direction: column;}
+  #menu_content h1 {font-size: x-large;}
+
+  #title h1 {font-size: 3em;}
+  #title h2 {font-size: 1.5em;}
+
+  .c2a {width: auto; height: 10vh; padding: 3%;}
+  .c2a span {font-size: 1.3rem;}
+
+  #cources {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .cource {width: 30vw; padding: 1%; }
+  .price_link {font-size: 1.5rem;}
+
+  #subscribe {width: 100%;}
+  #subscribe form {width: 90%;}
+  #subscribe input {width: 100%;}
+}

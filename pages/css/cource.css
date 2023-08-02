@@ -1,0 +1,23 @@
+div p {
+  font-size: 2em;
+}
+
+div h1 {
+  font-size: 8em;
+}
+
+div {
+  text-align: center;
+  z-index: 999;
+  color: #fff;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://source.unsplash.com/random/1920x1200/?space");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
